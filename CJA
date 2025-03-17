@@ -176,6 +176,14 @@ function generateCIDUrl() {
     document.getElementById('finalUrl').value = finalUrl;
 
 }
+
+function copyToClipboard() {
+    const finalUrl = document.getElementById('finalUrl');
+    finalUrl.select();
+    navigator.clipboard.writeText(finalUrl.value);
+    alert('URL Copied!');
+}
+
 </script>
 </body>
 </html>
